@@ -1,18 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import ButtonFatec from './components/button-fatec/ButtonFatec'
+import InputFatec from './components/input-fatec'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    
-      <p>
-        Olá mundo!
-      </p>
-    
+    <>
+      <hr>
+      <p>Insira os dados abaixo:</p>
+      <InputFatec type='Nome'/><br/>
+      <InputFatec type='E-mail'/><br/>
+      <InputFatec type='Senha'/><br/>
+      <ButtonFatec type='button' label='Fatec'/>
+      </hr>
+    </>
   )
 }
+// const App = () =>{}
 
 export default App
